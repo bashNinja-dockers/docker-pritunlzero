@@ -1,0 +1,15 @@
+#!/usr/bin/with-contenv bash
+
+# make folders
+mkdir -p \
+	/config/mongodb \
+	/config/log
+
+# Setup Mongodb
+if [ ! -e "/config/mongodb.conf" ]; then
+	cp /defaults/mongodb.conf /config/mongodb.conf
+fi
+
+# permissions
+chown -R abc:abc \
+	/config
