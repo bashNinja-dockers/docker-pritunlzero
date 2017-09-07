@@ -11,7 +11,7 @@ if [ ! -e "/config/mongodb.conf" ]; then
 fi
 
 # Setup Pritunl Zero
-[[ ! -L /etc/pritunl-zero.json ]]; then
+if [ ! -L /etc/pritunl-zero.json ]; then
 	rm /config/pritunl-zero.json
 	ln -s /config/pritunl-zero.json /etc/pritunl-zero.json
 fi
