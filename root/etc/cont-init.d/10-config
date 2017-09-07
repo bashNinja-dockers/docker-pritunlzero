@@ -12,7 +12,7 @@ fi
 
 # Setup Pritunl Zero
 if [ ! -L /etc/pritunl-zero.json ]; then
-	rm /config/pritunl-zero.json
+	rm /etc/pritunl-zero.json
 	ln -s /config/pritunl-zero.json /etc/pritunl-zero.json
 fi
 
