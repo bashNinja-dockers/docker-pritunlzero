@@ -10,6 +10,10 @@ if [ ! -e "/config/mongodb.conf" ]; then
 	cp /defaults/mongodb.conf /config/mongodb.conf
 fi
 
+# Setup Pritunl Zero
+[[ ! -L /etc/pritunl-zero.json ]] && \
+	ln -s /config/pritunl-zero.json /etc/pritunl-zero.json
+
 # permissions
 chown -R abc:abc \
 	/config
