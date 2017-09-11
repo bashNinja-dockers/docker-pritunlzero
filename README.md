@@ -2,7 +2,7 @@
 
 ## Pull the image
 
-    docker pull bashninja-dockers/docker-pritunlzero
+    docker pull bashninja/docker-pritunlzero
 
 ## Run Pritunl
 
@@ -10,7 +10,7 @@
         -v {path}:/config \
         -p 9800:443/tcp \
         -p 9799:80/tcp \
-        bashninja-dockers/docker-pritunlzero
+        bashninja/docker-pritunlzero
 
 ## Configure Pritunl
 
