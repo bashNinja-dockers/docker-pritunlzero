@@ -2,7 +2,7 @@
 
 ## Pull the image
 
-    docker pull bashNinja-dockers/docker-pritunlzero
+    docker pull bashninja-dockers/docker-pritunlzero
 
 ## Run Pritunl
 
@@ -10,7 +10,7 @@
         -v {path}:/config \ # MongoDB Data, Logs, Pritunl Zero Config
         -p 9800:443/tcp \
         -p 9799:80/tcp \
-        bashNinja-dockers/docker-pritunlzero
+        bashninja-dockers/docker-pritunlzero
 
 ## Configure Pritunl
 
