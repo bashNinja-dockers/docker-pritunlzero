@@ -7,7 +7,7 @@
 ## Run Pritunl
 
     docker run -d \
-        -v {path}:/config \ # MongoDB Data, Logs, Pritunl Zero Config
+        -v {path}:/config \
         -p 9800:443/tcp \
         -p 9799:80/tcp \
         bashninja-dockers/docker-pritunlzero
